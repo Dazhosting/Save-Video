@@ -31,7 +31,7 @@ handler.post(async (req, res) => {
 
     // GitHub Repo info
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const REPO = "USERNAME/REPO_NAME"; // Ganti
+    const REPO = "Dazhosting/Save-Video";
     const FILE_PATH = "data/videos.json";
 
     const getRes = await axios.get(`https://api.github.com/repos/${REPO}/contents/${FILE_PATH}`, {
