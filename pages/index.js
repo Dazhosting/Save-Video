@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function SaveVideo() {
+export default function Home() {
   const [video, setVideo] = useState(null);
   const [msg, setMsg] = useState("");
 
