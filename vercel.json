@@ -1,10 +1,7 @@
 {
   "version": 2,
-  "builds": [{ "src": "pages/**/*.js", "use": "@vercel/node" }],
-  "routes": [
-    { "src": "/api/upload", "dest": "/pages/api/upload.js" },
-    { "src": "/api/videos/(.*)", "dest": "/pages/api/videos/[id].js" },
-    { "src": "/save-video", "dest": "/pages/save-video.js" },
-    { "src": "/videos/(.*)", "dest": "/pages/videos/[id].js" }
+  "rewrites": [
+    { "source": "/save-video", "destination": "/save-video" },
+    { "source": "/videos/:id", "destination": "/videos/:id" }
   ]
 }
