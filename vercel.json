@@ -1,7 +1,0 @@
-{
-  "version": 2,
-  "rewrites": [
-    { "source": "/save-video", "destination": "/save-video" },
-    { "source": "/videos/:id", "destination": "/videos/:id" }
-  ]
-}
